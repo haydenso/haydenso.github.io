@@ -1,6 +1,9 @@
-@import url("fonts.css");
+@font-face{
+    font-family: 'SF-Bold';
+    src: url(.../fonts/SF_Pro/SFProDisplay-Bold.ttf);
+}
 
 .text{
     font-family: SF-Bold;
-    font-size: 200em;
+    font-size: 200px;
 }
