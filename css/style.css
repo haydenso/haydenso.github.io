@@ -1,14 +1,14 @@
 @font-face{
     font-family: 'SF-Bold';
-    src: url(.../fonts/SF_Pro/SFProDisplay-Bold.ttf) format('truetype');
+    src: url(".../fonts/SF_Pro/SFProDisplay-Bold.ttf")format('truetype');
 }
 
 /* Two color background */
 body  {
-    background: linear-gradient(to right,white 72%, #F1F8FF 28%); 
+    background: linear-gradient(to right,white 66%, #F1F8FF 34%); 
   }
 
 .text{
-    font-family: SF-Bold;
-    font-size: 200px;
+    font-family: 'SF-Bold';
+    font-size: 100px;
 }
