@@ -1,14 +1,128 @@
 @font-face{
-    font-family: SF-Bold;
+    font-family: SFpro;
+    src: url("../fonts/SF_Pro/SFProDisplay-Heavy.ttf")format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: SFpro;
     src: url("../fonts/SF_Pro/SFProDisplay-Bold.ttf")format('truetype');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: SFpro;
+    src: url("../fonts/SF_Pro/SFProDisplay-Medium.ttf")format('truetype');
+    font-weight: medium;
+}
+
+@font-face{
+    font-family: SourceCode;
+    src: url("../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf")format('truetype');
+    font-weight: bold;
+}
+
+:root {
+    --lightblue: #F1F8FF;
+    --generalblue: #267CD3;
+    --darkblue: #035B7D;
+    --lightgreen: #1DA501;
+    --red: #FF0808;
+  }
+
+/* remove border around */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* scroll and prevent x axis scroll */
+html::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* GENERAL STYLING */
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* Two color background */
-body  {
+#main {
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(to right,white 66%, #F1F8FF 34%); 
-  }
+}
 
-.text{
-    font-family: SF-Bold;
-    font-size: 120px;
+
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-family: SFpro;
+    font-weight: bold;
+    max-width: 65.5%;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;    
+    transition: 0.4s;
+}
+
+.header a:hover{
+    color: grey;
+}
+
+.comment{
+   font-size: 40px; 
+}
+
+
+/* MAIN CONTENT */
+#main-content{
+    max-width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-text span{
+    font-family: SourceCode;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#main-text p{
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 90px;
+}
+
+#darkblue{
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 90px;
+    color: var(--darkblue);
+}
+
+#main-image{
+    max-width: 33%;
+}
+
+/* ABOUT */
+#about {
+    height: 100vh;
+    width: 100vw;
+    background: red;
+}
+
+.text {
+    font-family: SFpro;
+    font-size: 70px;
 }
