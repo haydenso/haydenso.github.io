@@ -84,35 +84,59 @@ html::-webkit-scrollbar {
 }
 
 
-/* MAIN CONTENT */
+/* HOME CONTENT */
 #main-content{
-    max-width: 83%;
+    max-width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #main-text span{
     font-family: SourceCode;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 9vh;
 }
 
 #main-text p{
     font-family: SFpro;
     font-weight: bolder;
-    font-size: 90px;
+    font-size: 13vh;
 }
 
 #darkblue{
     font-family: SFpro;
     font-weight: bolder;
-    font-size: 90px;
+    font-size: 13vh;
     color: var(--darkblue);
 }
 
 #main-image{
     max-width: 33%;
+}
+
+#status {
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 3vh;
+    color: black;
+    align-self: center;
+}
+
+#status span {
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 3vh;
+    color: var(--lightgreen);
+}
+
+#scrolldown{
+    margin-top: -2%;
+    align-self: center;
+}
+
+#scrolldown img{
+    max-width: 2.5vw;
 }
 
 /* ABOUT */
