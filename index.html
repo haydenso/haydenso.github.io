@@ -33,22 +33,28 @@
             </header>
 
             <section id="main-content">
-                <div id="main-text">
+                <div id="main-text" class="rellax" data-rellax-speed="8" >
                     <span>Welcome{ </span>
                     <p>i'm, <strong id="darkblue">Hayden.</strong></p>
                     <span>}</span>
                 </div>
-                <img id="main-image" src="images/animoji.PNG">
+                <img class="rellax" data-rellax-speed="3" id="main-image" src="images/animoji.PNG">
             </section>
-            
-            <p id="status">let status = <span id="">14, student;</span></p>
-            <a href="#about" id="scrolldown"><img src="images/scrolldown.png"></a>
+        
+            <p class="rellax" data-rellax-speed="4" id="status">let status = <span id="">14, student;</span></p>
+            <a href="#about" id="scrolldown"><img class="rellax" data-rellax-speed="2" src="images/scrolldown.png"></a>
         </div>
 
         <div class="page" id="about">  
             
         </div>
-        
+     
+    <!-- JAVASCRIPT LIBRARIES -->
+    <script src="javascript/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>    
+    
     </body>
 
 </html>
