@@ -161,10 +161,26 @@ html::-webkit-scrollbar {
 #about {
     height: 100vh;
     width: 100vw;
-    background: red;
+    background: var(--darkblue);
 }
 
-.text {
-    font-family: SFpro;
-    font-size: 70px;
+/* PROJECTS */
+#projects {
+    height: 100vh;
+    width: 100vw;
+    background: var(--lightblue);
+}
+
+/* STARTUP */
+#startup {
+    height: 100vh;
+    width: 100vw;
+    background: var(--darkblue);
+}
+
+/* SOCIALS */
+#socials {
+    height: 100vh;
+    width: 100vw;
+    background: var(--darkblue);
 }
