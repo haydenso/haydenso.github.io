@@ -36,27 +36,28 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: SFpro;
 }
 
 /* scroll and prevent x axis scroll */
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
     /* display: none; */
     scroll-behavior: smooth;
     width: 9px;
 }
 
-::-webkit-scrollbar-track {
-    background: #75beda;
+body::-webkit-scrollbar-track {
+    background: #75beda; 
   }
 
 /* Handle */
-html::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: Transparent; 
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 /* Handle on hover */
-html::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
     background: grey; 
 }
 
