@@ -28,19 +28,36 @@
     --darkblue: #035B7D;
     --lightgreen: #1DA501;
     --red: #FF0808;
+    --darkgrey: #364f6b;
   }
 
 /* remove border around */
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* scroll and prevent x axis scroll */
 html::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #75beda;
+  }
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: Transparent; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: grey; 
 }
 
 /* GENERAL STYLING */
@@ -89,6 +106,7 @@ html::-webkit-scrollbar {
 
 /* HOME CONTENT */
 #main-content{
+    overflow: hidden;
     max-width: 88%;
     display: flex;
     justify-content: space-around;
@@ -171,7 +189,7 @@ html::-webkit-scrollbar {
 }
 
 .subpage:nth-child(2){
-    background-color:  var(--lightblue);
+    background-color:  var(--generalblue);
     height: 70vh;
     width: inherit;
 }
@@ -194,5 +212,11 @@ html::-webkit-scrollbar {
 #socials {
     height: 100vh;
     width: 100vw;
-    background: var(--darkblue);
+    background: white;
+}
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    background: var(--darkgrey)
 }
