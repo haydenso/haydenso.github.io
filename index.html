@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="css/hover.min.css" media="print" onload="this.media='all'">
 
+        <!-- cdn icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- favicon -->
         <link rel="icon" type="image/x-icon" href=""/>
 
@@ -27,12 +30,19 @@
         <div class="page" id="main">  
 
             <header class="header">
-                <p class="comment">&lt;!--</p>   <!-- &lt; shows < -->
-                <a href="#who">about</a>
-                <a href="#projects">projects</a>
-                <a href="#startup">startup</a>
-                <a href="#socials">socials</a>
-                <p class="comment">--&gt;</p>
+
+                <!-- Hamburger Icon -->
+                <a href="javascript:void(0);" class="icon" id="ham" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+                <div id="header-links">
+                    <p class="comment">&lt;!--</p>   <!-- &lt; shows < -->
+                    <a href="#who">about</a>
+                    <a href="#projects">projects</a>
+                    <a href="#startup">startup</a>
+                    <a href="#socials">socials</a>
+                    <p class="comment">--&gt;</p>
+                </div>
             </header>
 
             <section id="main-content">
@@ -45,7 +55,7 @@
             </section>
         
             <p class="rellax" data-rellax-speed="0" id="status">let status = <span id="">14, student;</span></p>
-            <a href="#who" id="scrolldown"><img class="rellax" data-rellax-speed="0" src="images/scrolldown.png"></a>
+            <a href="#who" id="scrolldown"><i class="fa fa-angle-double-down fa-3x"></i></a>
         </div>
 
         <div class="page" id="about">  
@@ -75,6 +85,7 @@
      
     <!-- JAVASCRIPT LIBRARIES -->
     <script src="javascript/rellax.min.js"></script>
+    <script src="javascript/script.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
     </script>    
