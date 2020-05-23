@@ -1,0 +1,320 @@
+@font-face{
+    font-family: SFpro;
+    src: url("../fonts/SF_Pro/SFProDisplay-Heavy.ttf")format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: SFpro;
+    src: url("../fonts/SF_Pro/SFProDisplay-Bold.ttf")format('truetype');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: SFpro;
+    src: url("../fonts/SF_Pro/SFProDisplay-Medium.ttf")format('truetype');
+    font-weight: medium;
+}
+
+@font-face{
+    font-family: SourceCode;
+    src: url("../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf")format('truetype');
+    font-weight: bold;
+}
+
+:root {
+    --lightblue: #F1F8FF;
+    --generalblue: #267CD3;
+    --darkblue: #035B7D;
+    --lightgreen: #1DA501;
+    --red: #FF0808;
+    --darkgrey: #364f6b;
+  }
+
+/* remove border around */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: SFpro;
+
+    /* Makes srollbar track transparent */
+    overflow: overlay;
+}
+
+/* scroll and prevent x axis scroll */
+body::-webkit-scrollbar {
+    /* display: none; */
+    scroll-behavior: smooth;
+    width: 8px;
+}
+
+/* body::-webkit-scrollbar-track {
+    background: #75beda; 
+  } */
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: Transparent; 
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 117, 117); 
+}
+
+/* GENERAL STYLING */
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Two color background */
+#main {
+    height: 95vh;
+    width: 100vw;
+    background: linear-gradient(to right,white 66%, #F1F8FF 34%);
+}
+
+
+/* HEADER */
+.header{
+    display: sticky;
+    font-size: 24px;
+    font-family: SFpro;
+    font-weight: bold;
+    color: #2d4059;
+}
+
+#ham{
+    display: none;
+}
+
+#header-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    max-width: 65.5%;
+}
+
+#header-links a{
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#header-links a:hover{
+    color: grey;
+    margin-top: -0.3%;
+}
+
+.comment{
+   font-size: 35px;
+}
+
+
+/* HOME CONTENT */
+#main-content{
+    overflow: hidden;
+    max-width: 88%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+#main-text span{
+    font-family: SourceCode;
+    font-weight: bold;
+    font-size: 11vh;
+}
+
+#main-text p{
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 15vh;
+}
+
+#darkblue{
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 15vh;
+    color: var(--darkblue);
+}
+
+#main-image{
+    max-width: 340px;
+}
+
+#down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 13vh;
+}
+
+#status {
+    overflow: hidden;
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 3vh;
+    color: black;
+    align-self: center;
+}
+
+#status span {
+    font-family: SFpro;
+    font-weight: bolder;
+    font-size: 3vh;
+    color: var(--lightgreen);
+}
+
+#scrolldown{
+    overflow: hidden;
+    align-self: center;
+    animation: bounce 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#scrolldown i{
+    color: black;
+}
+
+/* bounce animation from stack overflow --> for scroll down arrow*/
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 1.2vh, 0);
+    }
+}
+
+
+/* ABOUT */
+#about {
+    height: auto;
+    width: 100vw;
+    background: var(--darkblue);
+}
+
+.subpage:nth-child(1){
+    background-color: white;
+    height: 70vh;
+    width: inherit;
+}
+
+.subpage:nth-child(2){
+    background-color:  var(--generalblue);
+    height: 70vh;
+    width: inherit;
+}
+
+/* PROJECTS */
+#projects {
+    height: 100vh;
+    width: 100vw;
+    background: var(--lightblue);
+}
+
+/* STARTUP */
+#startup {
+    height: 100vh;
+    width: 100vw;
+    background: var(--darkblue);
+}
+
+/* SOCIALS */
+#socials {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+}
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    background: var(--darkgrey)
+}
+
+/* RAINBOW */
+.rainbow div{
+    height: 1vh;
+    max-width: 100vw; 
+}
+
+.rainbow div:nth-of-type(1){
+    background-color: #00486e;
+}
+
+.rainbow div:nth-of-type(2){
+    background-color: #0077b6;
+}
+
+.rainbow div:nth-of-type(3){
+    background-color: #00b4d8;
+}
+
+.rainbow div:nth-of-type(4){
+    background-color: #90e0ef;
+}
+
+.rainbow div:nth-of-type(5){
+    background-color: #caf0f8;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #main {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to bottom,white 64%, #F1F8FF 34%);
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    #ham{
+        margin-top: 4vh;
+        color: var(--darkgrey);
+        display: block;
+    }
+
+    #main-content{
+        max-width: 100%;
+    }
+
+    #header-links{
+        display: none;
+    }
+
+    #main-text span{
+        font-size: 6.5vh;
+    }
+    
+    #main-text p{
+        font-size: 7vh;
+    }
+
+    #darkblue{
+        font-size: 9vh;
+    }
+    
+    #main-image{
+        max-width: 280px;
+    }
+
+    #scrolldown{
+        margin-top: -5%;
+    }
+    
+}
