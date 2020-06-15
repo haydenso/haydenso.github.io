@@ -2,3 +2,9 @@
     font-family: 'SF-Bold';
     src: url(.../fonts/SF_Pro/SFProDisplay-Bold.ttf) format('truetype');
 }
+
+@font-face{
+    font-family: 'SF-Bold';
+    src: url(.../fonts/SF_Pro/SFProDisplay-Light.ttf) format('truetype');
+    font-weight: lighter;
+}

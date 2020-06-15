@@ -15,12 +15,20 @@
         <!-- viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- css styling -->
-        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="css/hover.min.css" media="print" onload="this.media='all'">
+        <!-- extra fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+
+        <!-- tailwind styling (bootstrap alternative) -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ocean.min.css">
 
         <!-- cdn icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- css styling -->
+        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="css/hover.min.css" media="print" onload="this.media='all'">
 
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -86,9 +94,46 @@
 
         <div class="page" id="about">  
             <div id="who" class="subpage">
+                <img class="object-contain" id="whojson" src="images/who.png">
+                <img class="object-contain" id="bday" src="images/bday.png">
+
+                <div id="studentbox" class="rounded overflow-hidden shadow-lg bg-blue-100">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-2xl mb-2">"a little about me": {</div>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp; First year <em class="text-pink-600">IGCSE</em> student <a class="text-blue-600"href="https://shatincollege.edu.hk/">@STC</a></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Student Council <em class="text-orange-500">Vice-Chairperson</em> </p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Trained <em class="text-green-600">Peer Supporter</em></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Delegate <em class="text-indigo-400">@STCMUN</em></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Cadet @ Hong Kong <em class="text-blue-700">Air</em> <em class="text-red-600">Cadet</em> Corps </p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   School <em class="text-red-600">Football</em> team</p>
+                      <div class="font-bold text-2xl">}</div>
+                    </div>
+                    <!-- <div class="px-6 py-4">
+                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 object-right-bottom"><a href="https://shatincollege.edu.hk/" target="_blank">@shatincollege</a></span>
+                    </div> -->
+                </div>
 
             </div>
+
             <div id="what" class="subpage">
+                <img iclass="object-contain" id="skillsjson" src="images/skills.png">
+                <img class="object-contain" id="location" src="images/location.png">
+
+                <div id="studentbox" class="rounded overflow-hidden shadow-lg bg-white">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-2xl mb-2">"programming skills": {</div>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp; <em class="text-pink-600">CompSci</em> student <a class="text-blue-600"href="https://pbaumgarten.com/">@pbaumgarten.com</a></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Python <em class="text-orange-500">(Flask)</em> </p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Vanilla <em class="text-green-600">Javascript</em></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   <em class="text-indigo-400">Git</em> version control</p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   <em class="text-blue-700">HTML</em> + <em class="text-red-600">CSS</em></p>
+                      <p class="text-gray-700 text-base">&nbsp;&nbsp;   Basic<em class="text-red-600">SQL</em></p>
+                      <div class="font-bold text-2xl">}</div>
+                    </div>
+                    <!-- <div class="px-6 py-4">
+                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 object-right-bottom"><a href="https://shatincollege.edu.hk/" target="_blank">@shatincollege</a></span>
+                    </div> -->
+                </div>
 
             </div>
         </div>
@@ -102,11 +147,13 @@
         </div>
 
         <div class="page" id="socials">  
-            
+            <button id="emailme" class="bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                email me!
+            </button>
         </div>
 
         <footer class="footer" id="footer">
-
+            <div class="text-white">© 2020 Hayden So • grab some boba <a>sohayden929@gmail.com</a></div>
         </footer>
      
     <!-- JAVASCRIPT LIBRARIES -->
