@@ -208,13 +208,13 @@ em {
     background: var(--darkblue);
 }
 
-.subpage:nth-child(1){
+.subpage:nth-child(even){
     background-color: white;
     height: 75vh;
     width: inherit;
 }
 
-.subpage:nth-child(2){
+.subpage:nth-child(odd){
     background-color:  var(--lightblue);
     height: 75vh;
     width: inherit;
@@ -328,7 +328,6 @@ footer{
 .rainbow div:nth-of-type(5){
     background-color: #caf0f8;
 }
-
 
 @media only screen and (max-width: 768px) {
     #main {
