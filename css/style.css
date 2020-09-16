@@ -376,5 +376,13 @@ footer{
     #startup img {
         max-width: 380px;
     }
+
+    .sbuttons{
+        width: 370px;
+    }
+
+    #startup{
+        max-width: 100vw;
+    }
     
 }
