@@ -90,8 +90,8 @@
             </div>
         </div>
 
-        <div class="page" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" id="about">  
-            <div id="who" class="subpage">
+        <div class="page" id="about">  
+            <div id="who" class="subpage" data-aos="fade-up" data-aos-duration="1000">
                 <img class="object-contain" id="whojson" src="images/who.png" alt="who">
 
                 <div id="studentbox" class="rounded overflow-hidden shadow-lg bg-blue-100">
@@ -113,8 +113,8 @@
 
             </div>
 
-            <div id="what" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" class="subpage">
-                <img iclass="object-contain" id="skillsjson" src="images/skills.png" alt="skills">
+            <div id="what" class="subpage" data-aos="fade-up" data-aos-duration="1000">
+                <img class="object-contain" id="skillsjson" src="images/skills.png" alt="skills">
                 <img class="object-contain" id="location" src="images/location.png" alt="location">
 
                 <div id="studentbox" class="rounded overflow-hidden shadow-lg bg-white">
@@ -148,7 +148,7 @@
         </div>
 
         <div class="page" id="startup">  
-            <img src="images/startup.png" alt="budup project image">
+            <img src="images/startup.png" alt="budup project image" data-aos="zoom-out-down">
             <div class="sbuttons">
                 <a href="https://budup.haydenso.com" rel="noreferrer" target="_blank" class="bg-red-400 hover:bg-red-600 text-gray font-bold py-2 px-4 border-b-4 border-red-300 hover:border-blue-500 rounded">
                     Live Project
@@ -243,8 +243,10 @@
     <!-- JAVASCRIPT LIBRARIES -->
     <script src="javascript/rellax.min.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
+        AOS.init();
     </script>    
     
     </body>
