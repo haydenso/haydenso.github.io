@@ -267,8 +267,23 @@ em {
     background: var(--darkblue);
 }
 
+#podcast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #edfdee;
+}
+
 #startup img {
     max-width: 600px;
+}
+
+#podcast img {
+    max-width: 400px;
 }
 
 .sbuttons{
