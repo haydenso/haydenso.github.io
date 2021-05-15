@@ -69,6 +69,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 /* im only using em tag to change color of text so i removed the default italics */
@@ -270,20 +271,29 @@ em {
 #podcast {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    align-content: center;
-    height: 100vh;
+    align-content: space-around;
+    height: 60vh;
     width: 100vw;
     background: #edfdee;
+}
+
+#podcast iframe{
+    padding-top: 10vh;
+    margin: 0;
 }
 
 #startup img {
     max-width: 600px;
 }
 
-#podcast img {
-    max-width: 400px;
+.pbuttons{
+    padding-top: 10vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
 }
 
 .sbuttons{
