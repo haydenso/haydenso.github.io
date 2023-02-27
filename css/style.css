@@ -256,6 +256,16 @@ em {
     background: var(--generalblue);
 }
 
+#publications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 60vh;
+    width: 100vw;
+}
+
 /* STARTUP */
 #startup {
     display: flex;
