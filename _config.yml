@@ -3,10 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: My writings
+title: Hayden So
 subtitle: ''
-description: ''
-keywords:
+description: 'I am roughly interested in computation, 
+data and complex systems (earth, social and financial). I think about machine learning, applied stats & DEs, history, policy and the human condition. 
+</br></br> Explored tech 
+</br></br> Current CS + Earth Systems @ HKUST 🇭🇰, I previously lived in Norway 🇳🇴 @ UWCRCN (2 time Nobel Peace prize nominee)'
 author: Hayden So
 language: en
 timezone: ''
@@ -98,6 +100,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 ## theme: landscape
 theme: cactus
+theme_config:
+  colorscheme: tango
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

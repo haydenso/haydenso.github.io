@@ -1,0 +1,26 @@
+1. Do any changes to desc in config yml
+2. hexo generate --> generate static files
+3. hexo server --> for server
+(hexo server updates as you make changes to the source folder for images and colours)
+4. cd into public folder and push that to origin master (hosted off of public folder) (ONLY PUSH THE PUBLIC FOLDER WHERE IT IS BEING HOSTED)
+
+NEW PAGE
+$ hexo new page about
+
+NEW POST
+$ hexo new post "hello world"
+
+TO CHANGE COLOR SCHEME go to themes/cactus/source/css/_colors
+
+MANUALLY ADD MONITORING
+
+LOGIN INTO CRONITOR
+
+<!-- Cronitor RUM -->
+<script async src="https://rum.cronitor.io/script.js"></script>
+<script>
+    window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    cronitor('config', { clientKey: '482f531b1b64ad8496d2aeeb7c8a3a15' });
+</script>
+
+Before pushing it to github
