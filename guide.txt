@@ -1,14 +1,19 @@
 1. Do any changes to desc in config yml
+hexo clean (to clean up)
 2. hexo generate --> generate static files
 3. hexo server --> for server
 (hexo server updates as you make changes to the source folder for images and colours)
 4. cd into public folder and push that to origin master (hosted off of public folder) (ONLY PUSH THE PUBLIC FOLDER WHERE IT IS BEING HOSTED)
+
+to change nav and the fidn me links, it is in config yml file in the themes/cactus/source folder
 
 NEW PAGE
 $ hexo new page about
 
 NEW POST
 $ hexo new post "hello world"
+
+the title in the md file itself dictates the name of the post
 
 TO CHANGE COLOR SCHEME go to themes/cactus/source/css/_colors
 
